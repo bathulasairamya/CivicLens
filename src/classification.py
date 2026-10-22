@@ -147,6 +147,15 @@ class SemanticEmbeddingClassifier:
         self._embedder: Optional[SentenceTransformer] = None
         self.clf = LogisticRegression(class_weight="balanced", max_iter=1000, random_state=42)
         self.classes_: Optional[np.ndarray] = None
+
+    def __getstate__(self):
+        state = self.__dict__.copy()
+        state["_embedder"] = None
+        return state
+
+    def __setstate__(self, state):
+        self.__dict__.update(state)
+        self._embedder = None
         
     @property
     def embedder(self) -> SentenceTransformer:
