@@ -66,21 +66,25 @@ def detect_script_characteristics(text: str) -> Dict[str, Any]:
         
     has_devanagari = any('\u0900' <= char <= '\u097F' for char in text)
     has_tamil = any('\u0B80' <= char <= '\u0BFF' for char in text)
+    has_telugu = any('\u0C00' <= char <= '\u0C7F' for char in text)
     has_latin = any('a' <= char.lower() <= 'z' for char in text)
     
     if has_devanagari:
         primary = "Devanagari"
     elif has_tamil:
         primary = "Tamil"
+    elif has_telugu:
+        primary = "Telugu"
     elif has_latin:
         primary = "Latin (English/Romanized Code-Mixed)"
     else:
         primary = "Other"
         
     return {
-        "has_indic_script": has_devanagari or has_tamil,
+        "has_indic_script": has_devanagari or has_tamil or has_telugu,
         "has_devanagari": has_devanagari,
         "has_tamil": has_tamil,
+        "has_telugu": has_telugu,
         "has_latin": has_latin,
         "primary_script": primary,
         "char_count": len(text)

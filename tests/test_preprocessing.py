@@ -28,6 +28,11 @@ def test_detect_script_characteristics():
     assert stats_hi["has_devanagari"] is True
     assert stats_hi["primary_script"] == "Devanagari"
     
+    telugu_text = "నీటి సరఫరా లేదు"
+    stats_te = detect_script_characteristics(telugu_text)
+    assert stats_te["has_telugu"] is True
+    assert stats_te["primary_script"] == "Telugu"
+    
     eng_text = "Heavy traffic jam on 4th block"
     stats_en = detect_script_characteristics(eng_text)
     assert stats_en["has_latin"] is True

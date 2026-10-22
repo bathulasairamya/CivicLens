@@ -17,3 +17,10 @@ EVAL-015,Sanitation,Hinglish,Dead animal lying near the park boundary causing di
 EVAL-016,Roads,Tanglish,Speed breaker is not painted and invisible at night.,Speed breaker la paint illa night time la theriyave maatinguthu.
 EVAL-017,Transport,Hinglish,Conductor refused UPI ticket payment and was misbehaving.,Conductor ne online UPI lene se mana kiya aur battameezi karne laga.
 EVAL-018,Campus facilities,Tanglish,Washroom flush in block C 2nd floor is completely broken.,Block C second floor washroom flush romba damage aagi water waste aagudhu.
+EVAL-019,Campus facilities,Telugu,Geyser in hostel washroom is not heating water at all.,Hostel washroom lo geyser pani cheyyadam ledhu cold water vastundi.
+EVAL-020,Electricity,Telugu,Street lights are completely off on this colony road pitch dark.,Colony road meeda street lights velagadam ledhu full cheekatiga undi.
+EVAL-021,Water supply,Telugu,Drinking water supply has stopped completely since morning.,Morning nunchi drinking water tap lo water raavadam poorthiga aagipoindi.
+EVAL-022,Sanitation,Telugu,Dustbin is overflowing on the road garbage piling up badly.,Road meeda dustbin overflow aindi chetha chaala perigipoyi bad smell vasthundi.
+EVAL-023,Roads,Telugu,Deep dangerous pothole on main road two-wheelers are slipping.,Main road meeda pedda pothole paddadi bike lu padipotunnayi repair cheyandi.
+EVAL-024,Transport,Telugu,Bus 45B skips the tech park stop regularly in the evening.,Evening time lo 45B bus tech park stop lo aagakunda vellipotondi.
+EVAL-025,Campus facilities,Telugu,Campus placement cell is not organizing recruitment drives properly.,Clg lo placements sarriga lev campus recruitment cell companies ni pilavadam ledhu.

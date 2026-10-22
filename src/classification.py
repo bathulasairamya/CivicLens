@@ -64,7 +64,7 @@ class TfidfBaselineClassifier:
         )
         
         if self.classifier_type == "logistic_regression":
-            clf = LogisticRegression(class_weight="balanced", max_iter=1000, random_state=42)
+            clf = LogisticRegression(C=3.0, class_weight="balanced", max_iter=1000, random_state=42)
         elif self.classifier_type == "linear_svm":
             # CalibratedClassifierCV wraps LinearSVC to output well-calibrated probabilities
             base_svc = LinearSVC(class_weight="balanced", random_state=42, max_iter=2000)
@@ -135,17 +135,21 @@ class TfidfBaselineClassifier:
 class SemanticEmbeddingClassifier:
     """
     Semantic multilingual complaint classifier utilizing pretrained Sentence Transformer
-    embeddings with a calibrated classification head.
+    embeddings with a calibrated classification head and temperature-scaled confidence.
     """
     def __init__(
         self,
         model_name: str = DEFAULT_EMBEDDING_MODEL,
-        device: Optional[str] = None
+        device: Optional[str] = None,
+        C: float = 5.0,
+        temperature: float = 0.35
     ):
         self.model_name = model_name
         self.device = device
+        self.C = C
+        self.temperature = temperature
         self._embedder: Optional[SentenceTransformer] = None
-        self.clf = LogisticRegression(class_weight="balanced", max_iter=1000, random_state=42)
+        self.clf = LogisticRegression(C=self.C, class_weight="balanced", max_iter=1000, random_state=42)
         self.classes_: Optional[np.ndarray] = None
 
     def __getstate__(self):
@@ -156,6 +160,10 @@ class SemanticEmbeddingClassifier:
     def __setstate__(self, state):
         self.__dict__.update(state)
         self._embedder = None
+        if "temperature" not in self.__dict__:
+            self.temperature = 0.35
+        if "C" not in self.__dict__:
+            self.C = 5.0
         
     @property
     def embedder(self) -> SentenceTransformer:
@@ -173,12 +181,17 @@ class SemanticEmbeddingClassifier:
         return self
 
     def predict(self, texts: List[str]) -> np.ndarray:
-        embeddings = self.extract_embeddings(texts)
-        return self.clf.predict(embeddings)
+        probas = self.predict_proba(texts)
+        indices = np.argmax(probas, axis=1)
+        return self.classes_[indices]
 
     def predict_proba(self, texts: List[str]) -> np.ndarray:
         embeddings = self.extract_embeddings(texts)
-        return self.clf.predict_proba(embeddings)
+        logits = self.clf.decision_function(embeddings)
+        if logits.ndim == 1:
+            logits = np.vstack([-logits, logits]).T
+        from scipy.special import softmax
+        return softmax(logits / max(0.01, self.temperature), axis=1)
 
     def predict_with_uncertainty(
         self,

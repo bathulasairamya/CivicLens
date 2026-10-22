@@ -85,10 +85,23 @@ def run_all_benchmarks(
     pred_semantic = semantic_clf.predict(test_df["text"].tolist())
     metrics_semantic = evaluate_classification_predictions(y_test, pred_semantic)
     
-    # Save trained models
-    save_model(tfidf_lr, os.path.join(models_dir, "tfidf_baseline_lr.joblib"))
-    save_model(tfidf_svm, os.path.join(models_dir, "tfidf_char_svm.joblib"))
-    save_model(semantic_clf, os.path.join(models_dir, "semantic_classifier.joblib"))
+    # Fit production serving models on full validated complaints corpus
+    print(" - Fitting production models on full complaints corpus for serving...")
+    prod_tfidf_lr = TfidfBaselineClassifier(classifier_type="logistic_regression", ngram_range=(1, 2))
+    prod_tfidf_lr.fit(df_complaints["text"].tolist(), df_complaints["category"].tolist())
+    
+    prod_tfidf_svm = TfidfBaselineClassifier(
+        classifier_type="linear_svm", analyzer="char_wb", ngram_range=(3, 5)
+    )
+    prod_tfidf_svm.fit(df_complaints["text"].tolist(), df_complaints["category"].tolist())
+    
+    prod_semantic = SemanticEmbeddingClassifier(C=5.0, temperature=0.35)
+    prod_semantic.fit(df_complaints["text"].tolist(), df_complaints["category"].tolist())
+
+    # Save trained production models
+    save_model(prod_tfidf_lr, os.path.join(models_dir, "tfidf_baseline_lr.joblib"))
+    save_model(prod_tfidf_svm, os.path.join(models_dir, "tfidf_char_svm.joblib"))
+    save_model(prod_semantic, os.path.join(models_dir, "semantic_classifier.joblib"))
     print(f"Model artifacts saved to {models_dir}/")
     
     # 3. Evaluate Code-Mixed Linguistic Robustness

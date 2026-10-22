@@ -59,3 +59,30 @@ CMP-057,Projector and audio HDMI connection defective in Lecture Hall LH-101.,Ca
 CMP-058,LH-101 projector flickering and no sound coming through HDMI display cable.,Campus facilities,en_informal,INC-C03
 CMP-059,LH 101 classroom me projector display flicker ho raha hai audio cable disconnected.,Campus facilities,code_mixed_hinglish,INC-C03
 CMP-060,Lab 3 desktop PCs crashing frequently due to overheating and defunct exhaust fan.,Campus facilities,en_formal,INC-C04
+CMP-061,Hostel washroom lo geyser pani cheyyadam ledhu hot water raavadam ledhu.,Campus facilities,code_mixed_telugu,INC-C05
+CMP-062,Water heater and geyser in hostel bathroom not heating water at all.,Campus facilities,en_formal,INC-C05
+CMP-063,Geyser pani cheyyadam ledhu water cold ga undi students problem avtundi.,Campus facilities,code_mixed_telugu,INC-C05
+CMP-064,Current cut aindi transformer nunchi sound vachindi bijli ledu.,Electricity,code_mixed_telugu,INC-E04
+CMP-065,Street lights velagadam ledhu full cheekatiga undi area lo.,Electricity,code_mixed_telugu,INC-E04
+CMP-066,Power cut in colony street lights not working pitch dark.,Electricity,en_formal,INC-E04
+CMP-067,High voltage spike valla fridge and fan burn aipoyayi appliances damage.,Electricity,code_mixed_telugu,INC-E05
+CMP-068,Drinking water supply tap lo water raavadam ledhu morning nunchi.,Water supply,code_mixed_telugu,INC-W04
+CMP-069,Main pipeline pagilipoindi road full ga flood aindi water supply ledu.,Water supply,code_mixed_telugu,INC-W05
+CMP-070,Municipal tap lo muddy dirty water vastondi bad smell vasthundi.,Water supply,code_mixed_telugu,INC-W06
+CMP-071,Street meeda dustbin overflow aindi chetha perigipoyindi foul smell vasthundi.,Sanitation,code_mixed_telugu,INC-S04
+CMP-072,Drainage kaluva choke aindi dirty black water road meeda flow avtundi.,Sanitation,code_mixed_telugu,INC-S05
+CMP-073,Chetha bandi 4 days ga raaledhu garbage collector van not coming.,Sanitation,code_mixed_telugu,INC-S06
+CMP-074,Road meeda pedda guntalu paddayi bike lu padipotunnayi pothole repair cheyandi.,Roads,code_mixed_telugu,INC-R04
+CMP-075,Main road street lights anni off lo unnayi road meeda em kanipinchatledu safety problem.,Roads,code_mixed_telugu,INC-R05
+CMP-076,Footpath tiles virigipoyi iron rods bayataki vachayi people tripping daily.,Roads,code_mixed_telugu,INC-R06
+CMP-077,Tech park stop lo 45B bus aagakunda vellipotundi commuters stranded daily.,Transport,code_mixed_telugu,INC-T04
+CMP-078,Feeder bus driver chaala fast ga rash driving chestunnadu sudden brakes vestunnadu.,Transport,code_mixed_telugu,INC-T05
+CMP-079,Bus conductor online UPI theesukovatledhu exact change adigi misbehave chestunnadu.,Transport,code_mixed_telugu,INC-T06
+CMP-080,Library AC pani cheyyadam ledhu reading room lo hot air vastundi.,Campus facilities,code_mixed_telugu,INC-C06
+CMP-081,Classroom projector display raavadam ledhu HDMI cable loose audio sound ledu.,Campus facilities,code_mixed_telugu,INC-C07
+CMP-082,Campus placement cell training cancel aindi companies sarriga raavadam ledhu placements levu.,Campus facilities,code_mixed_telugu,INC-C08
+CMP-083,College placement cell is not organizing recruitment drives for students.,Campus facilities,en_formal,INC-C08
+CMP-084,Clg lo placements sarriga lev campus recruitment cell inactive ga undi.,Campus facilities,code_mixed_telugu,INC-C08
+CMP-085,Geyser pani cheyyadam ledhu hot water raavadam ledhu urgent repair kavali.,Campus facilities,code_mixed_telugu,INC-C05
+CMP-086,Hostel washroom lo geyser pani cheyyadam ledhu water cold ga undi students problem.,Campus facilities,code_mixed_telugu,INC-C05
+CMP-087,Hostel geyser not working hot water issue in bathroom.,Campus facilities,en_informal,INC-C05
