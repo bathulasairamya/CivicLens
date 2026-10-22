@@ -1,0 +1,19 @@
+eval_id,category,language,standard_english,code_mixed_variant
+EVAL-001,Water supply,Hinglish,Water supply is completely cut off since yesterday morning.,Kal subah se paani supply poori tarah band hai kuch karo.
+EVAL-002,Water supply,Tanglish,Water pipe has burst near main gate road is flooded.,Main gate kitta water pipe vedichu pochu road fulla thanni nikudhu.
+EVAL-003,Electricity,Hinglish,Transformer burst on our street power is out for 5 hours.,Hamare street ka transformer phat gaya 5 ghante se current gayab hai.
+EVAL-004,Electricity,Tanglish,Power outage in our area since evening no street lights either.,Area la evening la irundhu current illa street lights kooda eriyala.
+EVAL-005,Sanitation,Hinglish,Garbage has not been collected for three days stink is unbearable.,Teen din se kachra gaadi nahi aayi bohot gandi badboo aa rahi hai.
+EVAL-006,Sanitation,Tanglish,Drainage water is overflowing into the residential compound.,Drainage thanni compound kulla overflow aagi varudhu romba mosam.
+EVAL-007,Roads,Hinglish,Deep pothole on the main road bike riders are falling daily.,Main road pe bohot gehra gaddha hai roz bike wale girte hain.
+EVAL-008,Roads,Tanglish,All streetlights are broken on this avenue very dark and unsafe.,Intha street la light ellam odanju pochu romba irutta irukku safety illa.
+EVAL-009,Transport,Hinglish,Bus route 45 is running 40 minutes late students are stranded.,Route 45 bus 40 minute late chal rahi hai bacche pareshaan hain.
+EVAL-010,Transport,Tanglish,Bus driver was driving recklessly and almost hit an auto.,Bus driver romba speed aa oti auto kitta accident aaga paathuchu.
+EVAL-011,Campus facilities,Hinglish,Air conditioning in library reading hall is blowing hot air.,Library reading hall ka AC garam hawa phek raha hai padhna mushkil hai.
+EVAL-012,Campus facilities,Tanglish,Hostel lift is broken for two days students carrying luggage by stairs.,Hostel lift rendu naala work aagala students stairs la luggage thookitu poranga.
+EVAL-013,Water supply,Hinglish,Muddy yellow water is coming from the kitchen taps.,Kitchen ke nall se peela mitti wala paani nikal raha hai peene layak nahi.
+EVAL-014,Electricity,Tanglish,High voltage current damaged our computer and lights.,High voltage spike aagi computer um light um adichu pochu.
+EVAL-015,Sanitation,Hinglish,Dead animal lying near the park boundary causing disease risk.,Park ke boundary ke paas mara hua kutta pada hai bimari failne ka darr hai.
+EVAL-016,Roads,Tanglish,Speed breaker is not painted and invisible at night.,Speed breaker la paint illa night time la theriyave maatinguthu.
+EVAL-017,Transport,Hinglish,Conductor refused UPI ticket payment and was misbehaving.,Conductor ne online UPI lene se mana kiya aur battameezi karne laga.
+EVAL-018,Campus facilities,Tanglish,Washroom flush in block C 2nd floor is completely broken.,Block C second floor washroom flush romba damage aagi water waste aagudhu.

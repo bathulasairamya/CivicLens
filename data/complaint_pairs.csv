@@ -1,0 +1,35 @@
+pair_id,complaint_1,complaint_2,is_duplicate,pair_type
+PAIR-001,Main water pipeline burst near Gate 3 causing severe flooding and zero tap pressure.,Big pipe leakage near gate 3 road is totally flooded no water coming in taps.,1,lexical_paraphrase
+PAIR-002,Main water pipeline burst near Gate 3 causing severe flooding and zero tap pressure.,Gate 3 ke paas water pipe phat gaya hai poora road flood ho gaya aur paani nahi aa raha.,1,code_mixed_pair
+PAIR-003,Drinking water from municipal taps in Sector 9 is brown and smells like sewage.,Sec 9 tap water is muddy and foul smelling pls fix ASAP drinking it is dangerous.,1,lexical_paraphrase
+PAIR-004,Drinking water from municipal taps in Sector 9 is brown and smells like sewage.,Sector 9 me ganda mitti wala paani aa raha hai badboo bohot zyada hai.,1,code_mixed_pair
+PAIR-005,Complete blackout in Ward 12 since 3 PM following a loud transformer explosion.,Ward 12 me transformer blast ho gaya bohot zor se sound aaya aur bijli chali gayi.,1,code_mixed_pair
+PAIR-006,Complete blackout in Ward 12 since 3 PM following a loud transformer explosion.,Ward 12 la periya transformer blast aaiduchi 3 mani la irundhu current illa.,1,code_mixed_pair
+PAIR-007,Dangerous high voltage fluctuation damaged refrigerator and microwave on 5th cross.,5th cross me voltage bohot fluctuate kar raha hai AC aur fridge kharab ho gaya.,1,code_mixed_pair
+PAIR-008,Live electrical cable snapped and hanging dangerously close to pedestrian walkway.,Neeche latka hua live wire footpath pe hai bohot khatarnak hai bache khelte hai.,1,code_mixed_pair
+PAIR-009,Overflowing garbage bin at Market Square attracting stray cattle and causing foul odor.,Market square dustbin is spilling all over the road stinks badly dogs gathering.,1,lexical_paraphrase
+PAIR-010,Overflowing garbage bin at Market Square attracting stray cattle and causing foul odor.,Market square me kachra peti over flow ho raha hai kachra sadak par faila hai.,1,code_mixed_pair
+PAIR-011,Underground sewage drain choked near Central Park resulting in black water spill.,Central park ke pass gutter choke ho gaya hai ganda paani sadak pe beh raha hai.,1,code_mixed_pair
+PAIR-012,Deep dangerous pothole on MG Road near flyover entrance causing two-wheeler accidents.,MG road flyover ke paas bohot bada gaddha hai daily bike gir rahi hai repair karo.,1,code_mixed_pair
+PAIR-013,Deep dangerous pothole on MG Road near flyover entrance causing two-wheeler accidents.,MG road flyover kitta periya pallam irukku bike la poravanga slip aagi vizhranga.,1,code_mixed_pair
+PAIR-014,Streetlights completely off on Ring Road stretch between pillars 40 and 65.,Ring road pe pillar 40 se 65 tak saare streetlight band hai andhera rehta hai.,1,code_mixed_pair
+PAIR-015,Route 45B city bus consistently skipping the Tech Park stop during evening peak hours.,Tech park stop pe 45B bus rukti hi nahi evening me log khade reh jate hai.,1,code_mixed_pair
+PAIR-016,Hostel Block 4 passenger elevator stalled between 2nd and 3rd floors with faulty door.,Hostel 4 ka lift 2nd aur 3rd floor ke beech me atak gaya hai door nahi khul raha.,1,code_mixed_pair
+PAIR-017,Central library 2nd floor air conditioning unit leaking water on study desks.,Library second floor ka AC leak ho raha hai table pe paani gir raha hai.,1,code_mixed_pair
+PAIR-018,Main water pipeline burst near Gate 3 causing severe flooding and zero tap pressure.,Water contamination in block B storage tank leading to illness among residents.,0,hard_negative_same_category
+PAIR-019,Drinking water from municipal taps in Sector 9 is brown and smells like sewage.,Low water pressure in 4th block overhead cistern since yesterday evening.,0,hard_negative_same_category
+PAIR-020,Complete blackout in Ward 12 since 3 PM following a loud transformer explosion.,Dangerous high voltage fluctuation damaged refrigerator and microwave on 5th cross.,0,hard_negative_same_category
+PAIR-021,Live electrical cable snapped and hanging dangerously close to pedestrian walkway.,Solar street panel inverter failure in green avenue park.,0,hard_negative_same_category
+PAIR-022,Overflowing garbage bin at Market Square attracting stray cattle and causing foul odor.,Sanitation workers have not visited Greenfield Colony for trash collection in four days.,0,hard_negative_same_category
+PAIR-023,Underground sewage drain choked near Central Park resulting in black water spill.,Public urinal near bus terminal lacks cleaning and running flush water.,0,hard_negative_same_category
+PAIR-024,Deep dangerous pothole on MG Road near flyover entrance causing two-wheeler accidents.,Streetlights completely off on Ring Road stretch between pillars 40 and 65.,0,hard_negative_same_category
+PAIR-025,Broken concrete footpath slabs exposing iron rods near Metro station exit A.,Traffic signal at junction 4 timing is out of synchronization.,0,hard_negative_same_category
+PAIR-026,Route 45B city bus consistently skipping the Tech Park stop during evening peak hours.,Reckless overspeeding and harsh braking by driver of feeder bus DL-1P-9921.,0,hard_negative_same_category
+PAIR-027,Hostel Block 4 passenger elevator stalled between 2nd and 3rd floors with faulty door.,Projector and audio HDMI connection defective in Lecture Hall LH-101.,0,hard_negative_same_category
+PAIR-028,Main water pipeline burst near Gate 3 causing severe flooding and zero tap pressure.,Complete blackout in Ward 12 since 3 PM following a loud transformer explosion.,0,cross_category_negative
+PAIR-029,Underground sewage drain choked near Central Park resulting in black water spill.,Deep dangerous pothole on MG Road near flyover entrance causing two-wheeler accidents.,0,cross_category_negative
+PAIR-030,Hostel Block 4 passenger elevator stalled between 2nd and 3rd floors with faulty door.,Route 45B city bus consistently skipping the Tech Park stop during evening peak hours.,0,cross_category_negative
+PAIR-031,Deep dangerous pothole on MG Road near flyover entrance causing two-wheeler accidents.,Huge crater on MG road flyover entry point vehicles bumping heavily.,1,semantic_paraphrase
+PAIR-032,Hostel Block 4 passenger elevator stalled between 2nd and 3rd floors with faulty door.,The lift at block 4 campus dormitory is inoperative trapped halfway up.,1,semantic_paraphrase
+PAIR-033,Central library 2nd floor air conditioning unit leaking water on study desks.,Air conditioner unit condensation dripping onto reading tables in 2nd level library.,1,semantic_paraphrase
+PAIR-034,Reckless overspeeding and harsh braking by driver of feeder bus DL-1P-9921.,Driver of bus DL-1P-9921 is operating dangerously at high speeds with sudden deceleration.,1,semantic_paraphrase
